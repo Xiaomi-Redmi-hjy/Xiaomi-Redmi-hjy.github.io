@@ -22,13 +22,18 @@
         .feature-card:hover {
             box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
         }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 0, 0, 0.8); }
+            100% { text-shadow: 0 0 50px rgba(255, 255, 255, 0.9), 0 0 100px rgba(255, 0, 0, 0.8); }
+        }
     </style>
 </head>
 <body>
     <!-- 导航栏和Logo -->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="logo.png" alt="Redmi Logo" class="logo">
+            <img src="images/redmi-logo.png" alt="Redmi Logo" class="logo">
             <div class="brand">Redmi</div>
         </div>
         <div class="nav-links">
@@ -52,7 +57,7 @@
         <!-- 手机轮廓 - 更新参数 -->
         <div class="phone-outline">
             <div class="phone-screen">
-                <img src="logo.png" alt="Redmi Logo" style="height: 60px; margin-bottom: 30px;">
+                <img src="images/redmi-logo.png" alt="Redmi Logo" style="height: 60px; margin-bottom: 30px;">
                 <h3 style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 0 0 10px rgba(255,0,0,0.7);">240万跑分性能怪兽</h3>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 20px 0;">
                     <span style="background: rgba(255,0,0,0.2); padding: 8px 15px; border-radius: 20px;">骁龙8s Gen4</span>
@@ -70,7 +75,7 @@
         <!-- 代言人信息 - 更新引言 -->
         <div class="endorsement">
             <div class="endorser-image">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="郝俊尧">
+                <img src="images/hao-junyao.jpg" alt="郝俊尧">
             </div>
             <div class="endorser-text">
                 <h3>郝俊尧</h3>
@@ -85,7 +90,7 @@
                     <i class="fas fa-microchip"></i>
                 </div>
                 <h4>性能铁三角</h4>
-                <p>骁龙8s Gen4旗舰芯片｜LPDDR5X内存｜UFS 4.1闪存<br>安兔兔跑分超240万，6000mm²双环路冰封散热系统<br>《原神》59.2fps满帧运行，机身仅42.3℃:cite[1]:cite[8]</p>
+                <p>骁龙8s Gen4旗舰芯片｜LPDDR5X内存｜UFS 4.1闪存<br>安兔兔跑分超240万，6000mm²双环路冰封散热系统<br>《原神》59.2fps满帧运行，机身仅42.3℃</p>
             </div>
             
             <div class="feature-card">
@@ -93,7 +98,7 @@
                     <i class="fas fa-battery-full"></i>
                 </div>
                 <h4>续航怪兽</h4>
-                <p>7550mAh硅碳负极电池｜90W有线快充｜22.5W反向充电<br>重度游戏10小时｜视频播放19小时｜35分钟充满100%<br>能量密度831Wh/L，厚度仅7.98mm:cite[2]:cite[7]:cite[10]</p>
+                <p>7550mAh硅碳负极电池｜90W有线快充｜22.5W反向充电<br>重度游戏10小时｜视频播放19小时｜35分钟充满100%</p>
             </div>
             
             <div class="feature-card">
@@ -101,7 +106,7 @@
                     <i class="fas fa-display"></i>
                 </div>
                 <h4>旗舰直屏</h4>
-                <p>6.83英寸1.5K OLED直屏｜3200nit峰值亮度<br>120Hz刷新率+3840Hz PWM调光｜杜比视界认证<br>康宁大猩猩玻璃7i｜IP66/68/69三重防水:cite[3]:cite[5]:cite[9]</p>
+                <p>6.83英寸1.5K OLED直屏｜3200nit峰值亮度<br>120Hz刷新率+3840Hz PWM调光｜杜比视界认证</p>
             </div>
         </div>
         
@@ -125,28 +130,30 @@
                     <p style="color: #ff6a6a;">国补价: <span style="font-weight: bold;">2549元</span></p>
                 </div>
             </div>
-            <p style="margin-top: 15px; opacity: 0.8;">*哈利·波特定制版同步发售，2799元起:cite[3]:cite[5]</p>
+            <p style="margin-top: 15px; opacity: 0.8;">*哈利·波特定制版同步发售，2799元起</p>
         </div>
     </div>
-
+    
     <footer class="footer">
         <div class="footer-content">
-            <img src="logo.png" alt="Redmi Logo" class="footer-logo">
+            <img src="images/redmi-logo.png" alt="Redmi Logo" class="footer-logo">
             <div class="footer-links">
                 <a href="#">产品参数</a>
                 <a href="#">购买渠道</a>
                 <a href="#">技术支持</a>
                 <a href="#">国补政策</a>
             </div>
-            <p class="copyright">© 2025 Redmi Turbo 4 Pro 郝俊尧代言版 | 骁龙8s Gen4 | 7550mAh电池 | IP69防水</p>
+            <p class="copyright">&#169; 2025 Redmi Turbo 4 Pro 郝俊尧代言版 | 骁龙8s Gen4 | 7550mAh电池 | IP69防水</p>
             <p class="slogan">性能越级 · 续航革命</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- 引入 Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        // 粒子背景配置（保持不变）
-        // 动态标题效果（保持不变）
+        particlesJS.load('particles-js', '/path/to/particles.json', function() {
+            console.log('粒子效果已加载');
+        });
     </script>
 </body>
 </html>
